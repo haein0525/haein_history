@@ -8,6 +8,8 @@
 
 @charset "UTF-8";
 
+
+
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
@@ -90,9 +92,7 @@ h6 {
   font-family: var(--heading-font);
 }
 
-.stat-item .purecounter{
-  font-family: 'Ria';
-}
+
 
 .typed-cursor {
   font-size: 2.8rem;   /* 원하는 크기 */
@@ -895,7 +895,7 @@ margin-left: 11px;
   margin: 0 auto 40px;
   border-radius: 30px;
   overflow: hidden;
-  border: 5px solid #D7E2DE;
+  border: 5px solid #dddfe0;
   box-shadow: 0 10px 30px color-mix(in srgb, #d7e1e2, transparent 80%);
 }
 
@@ -1391,8 +1391,17 @@ margin-left: 11px;
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
+
+.resume{
+  background-color: #fafbfc;
+}
 .resume .section-header {
   margin-bottom: 2.5rem;
+
+}
+
+.resume .section-header-right{
+  margin-left: 50px;
 }
 
 .resume .section-header h2 {
@@ -1488,6 +1497,7 @@ margin-left: 11px;
   list-style: none;
 }
 
+
 .resume .experience-section .experience-cards .experience-card .card-body .achievements li {
   position: relative;
   padding-left: 1.5rem;
@@ -1495,6 +1505,17 @@ margin-left: 11px;
   color: color-mix(in srgb, var(--default-color), transparent 15%);
   font-size: 0.9rem;
 }
+
+
+.education-item li ::before {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+  font-size: 0.9rem;
+  content: "✓";
+}
+
 
 .resume .experience-section .experience-cards .experience-card .card-body .achievements li::before {
   content: "✓";
@@ -1504,6 +1525,36 @@ margin-left: 11px;
   color: var(--accent-color);
   font-weight: bold;
 }
+
+.education-item .achievements {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.education-item .achievements li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-top: 10px;
+  margin-left: 3px;
+  margin-bottom: 0.5rem;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+  font-size: 0.9rem;
+}
+
+.education-item .achievements li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+
+
+
+
 
 .resume .experience-section .experience-cards .experience-card .card-body .achievements li:last-child {
   margin-bottom: 0;
@@ -1525,6 +1576,8 @@ margin-left: 11px;
   width: 2px;
   background: linear-gradient(to bottom, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 70%));
 }
+
+
 
 .resume .education-section .education-timeline .education-item {
   position: relative;
@@ -1564,7 +1617,7 @@ margin-left: 11px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 .resume .education-section .education-timeline .education-item .education-content .degree-header h3 {
