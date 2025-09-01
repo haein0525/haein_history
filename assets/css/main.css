@@ -93,6 +93,11 @@ h6 {
 }
 
 
+.hero .hero-title .typed{
+  font-size: 5.5rem;
+}
+
+
 
 .typed-cursor {
   font-size: 2.8rem;   /* 원하는 크기 */
@@ -573,8 +578,9 @@ margin-left: 11px;
 
 .hero .lead {
   font-size: 1.2rem;
+  font-weight: 600;
  
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, #71767a, transparent 20%);
   margin-bottom: 3rem;
   line-height: 1.6;
 }
