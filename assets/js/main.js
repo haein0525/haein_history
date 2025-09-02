@@ -153,7 +153,8 @@
         itemSelector: '.isotope-item',
         layoutMode: layout,
         filter: filter,
-        sortBy: sort
+        sortBy: sort,
+        isFitWidth: true
       });
     });
 
